@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  scylla-node1:
+    image: scylladb/scylla
+    container_name: scylla-node1
+    ports:
+      - "9042:9042"
+    networks:
+      - scylla_net
+
+  api:
+    build: ./api
+    ports:
+      - "8000:8000"
+    depends_on:
+      - scylla-node1
+    networks:
+      - scylla_net
+    environment:
+      - SCYLLA_HOST=scylla-node1
+
+networks:
+  scylla_net:
