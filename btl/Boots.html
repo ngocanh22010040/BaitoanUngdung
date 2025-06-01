@@ -1,0 +1,477 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boots</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+.box {
+    width: 100vw;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.tieude {
+    width: 100%;
+}
+.tieude1 {
+    padding-left: 50px;
+    background-color: rgba(128, 128, 128, 0.099);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo1 {
+    width: 3%;
+}
+.tieude1 > ul > li {
+    list-style: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid;
+}
+.tieude1 > ul {
+    display: flex;
+}
+.tieude1 > ul > li > a {
+    color: black;
+}
+.tieude1 > ul > li > a:hover {
+    color: rgba(0, 0, 0, 0.374);
+}
+.logo2 {
+    width: 50px;
+}
+.tieude2 {
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.tieudemid > ul {
+    display: flex;
+    list-style: none;
+}
+.tieudemid > ul > li > a > h3 {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: black;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.tieudemid > ul > li > a > h3:hover {
+    color: rgba(0, 0, 0, 0.374);
+    border-bottom: 3px solid black;
+}
+.tieuderight > form {
+    display: flex;
+    align-items: center;
+}
+.search-input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+.search-btn {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #000;
+    color: white;
+}
+.search-btn:hover {
+    background-color: rgba(0, 0, 0, 0.537);
+}
+.tieude-content {
+    margin-top: 50px;
+    width: 11%;
+    display: flex;
+}
+#button {
+    display: flex;
+    margin-left: 20px;
+}
+#button > .btn {
+    margin-left: 20px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+#button > .btn:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.tieude-content > a {
+    color: #000;
+}
+.tieude-content > a > h1:hover {
+    color: rgba(0, 0, 0, 0.377);
+    border-bottom: 3px solid black;
+}
+.menu {
+    width: 100%;
+}
+.sanpham {
+    width: 100%;
+}
+.hang1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+}
+.hang11 {
+    width: 30%;
+    margin: 20px;
+    height: 30%;
+    display: none;
+    position: relative;
+    text-align: center
+}
+.boots {
+    width: 100%;
+    height: 100%;
+
+}
+.boots {
+    max-width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.boots:hover {
+    transform: scale(1.1);
+}
+
+.show {
+    display: block;
+}
+.spkhac {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    margin-top: 10px; 
+}
+.sp {
+    flex: 1;
+    padding: 0 5px;
+}
+
+.sp img {
+    max-width: 100%; 
+    display: block; 
+}
+.giapsp {
+    position: absolute; 
+    bottom: 10px;
+    width: 100%;
+}
+
+.gia{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    font-size: 16px;
+}
+.highlight {
+    background-color: yellow;
+}
+.footer {
+    background-color: rgb(24, 22, 22);
+    color: rgb(175, 168, 168);
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 50px;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul {
+    padding-top: 5px;
+}
+
+.footer-section a {
+    color: rgb(175, 168, 168);
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    gap: 10px;
+}
+
+.social-links li {
+    display: inline-block;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #998c8c;
+    padding-top: 10px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="tieude">
+            <div class="tieude1">
+                <a href=""><img src="../btl/logo1.png" alt="" class="logo1"></a>
+                <ul>
+                    <li><a href="findastore.html">Find a store</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="Joinus.html">Join us</a></li>
+                    <li><a href="login.html">Sign in</a></li>
+                </ul>
+            </div>
+            <div class="tieude2">
+                <a href=""><img src="../btl/logo2.png" alt="" class="logo2"></a>
+                <div class="tieudemid">
+                    <ul>
+                        <li><a href="homepage.html"><h3>New and Featured</h3></a></li>
+                        <li><a href="shoes.html"><h3>Shoes</h3></a></li>
+                        <li><a href="Boots.html"><h3>Boots</h3></a></li>
+                        <li><a href="Sandals.html"><h3>Sandals</h3></a></li>
+                    </ul>
+                </div>
+                <div class="tieuderight">
+                    <form onsubmit="return searchProducts()">
+                        <input type="text" placeholder="Search" class="search-input" id="search-input">
+                        <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="tieude-content">
+                <a href="shoes.html"><h1 style="font-family: Arial, Helvetica, sans-serif;">Boots</h1></a>
+                <div id="button">
+                    <button class="btn" onclick="filter('all')">Show All</button>
+                    <button class="btn" onclick="filter('Dr. Martens')">Dr. Martens</button>
+                    <button class="btn" onclick="filter('Timberland')">Timberland</button>
+                    <button class="btn" onclick="filter('Pedro')">Pedro</button>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="sanpham">
+                    <div class="hang1">
+                        <div class="hang11 Dr. Martens">
+                            <img src="../btl/boot1.png" alt="" class="boots big-image" id="bigImage1" data-default-src="../btl/boot1.png">
+                            <div class="spkhac">
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage1', '../btl/boot1-1.png')" onmouseout="resetImage('bigImage1')"><img src="../btl/boot1-1.png" alt=""></a></div>
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage1', '../btl/boot1-2.png')" onmouseout="resetImage('bigImage1')"><img src="../btl/boot1-2.png" alt=""></a></div>
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage1', '../btl/boot1-3.png')" onmouseout="resetImage('bigImage1')"><img src="../btl/boot1-3.png" alt=""></a></div>
+                            </div>
+                            <br>
+                            <h3>
+                                1460 SMOOTH LEATHER LACE UP BOOTS</h3>
+                                <p>4 color</p>
+                            <div class="giasp">
+                            <span class="gia">$210</span>
+                            </div>
+                        </div>
+                        <div class="hang11 Dr. Martens">
+                            <img src="../btl/boot2.png" alt="" class="boots big-image" id="bigImage2" data-default-src="../btl/boot2.png">
+                            <div class="spkhac">
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage2', '../btl/boot2-1.png')" onmouseout="resetImage('bigImage2', '../btl/boot2.png')"><img src="../btl/boot2-1.png" alt=""></a></div>
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage2', '../btl/boot2-2.png')" onmouseout="resetImage('bigImage2', '../btl/boot2.png')"><img src="../btl/boot2-2.png" alt=""></a></div>
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage2', '../btl/boot2-3.png')" onmouseout="resetImage('bigImage2', '../btl/boot2.png')"><img src="../btl/boot2-3.png" alt=""></a></div>
+                            </div>
+                            <br>
+                            <h3>
+                                WOODARD GRIZZLY LEATHER LOW BOOTS </h3>
+                                <p>2 color</p>
+                            <div class="giasp">
+                            <span class="gia">$112</span>
+                            </div>
+                        </div>
+                        <div class="hang11 Dr. Martens">
+                            <img src="../btl/boot3.png" alt="" class="boots big-image" id="bigImage3" data-default-src="../btl/boot3.png">
+                            <div class="spkhac">
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage3', '../btl/boot3-1.png')" onmouseout="resetImage('bigImage3', '../btl/boot3.png')"><img src="../btl/boot3-1.png" alt=""></a></div>
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage3', '../btl/boot3-2.png')" onmouseout="resetImage('bigImage3', '../btl/boot3.png')"><img src="../btl/boot3-2.png" alt=""></a></div>
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage3', '../btl/boot3-3.png')" onmouseout="resetImage('bigImage3', '../btl/boot3.png')"><img src="../btl/boot3.3.png" alt=""></a></div>
+                            </div>
+                            <br>
+                            <h3>DEVON FLOWER  LEATHER PLATFORM BOOTS</h3>
+                            <p>3 color</p>
+                            <div class="giasp">
+                            <span class="gia">$119</span>
+                            </div>
+                        </div>
+                        <div class="hang11 Timberland">
+                            <img src="../btl/boot4.png" alt="" class="boots big-image" id="bigImage4" data-default-src="../btl/boot4.png">
+                            <div class="spkhac">
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage4', '../btl/boot4-1.png')" onmouseout="resetImage('bigImage4', '../btl/boot4.png')"><img src="../btl/boot4-1.png" alt=""></a></div>
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage4', '../btl/boot4-2.png')" onmouseout="resetImage('bigImage4', '../btl/boot4.png')"><img src="../btl/boot4-2.png" alt=""></a></div>
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage4', '../btl/boot4-3.png')" onmouseout="resetImage('bigImage4', '../btl/boot4.png')"><img src="../btl/boot4-3.png" alt=""></a></div>
+                            </div>
+                            <br>
+                            <h3> Anniversary Edition Premium 6-Inch Waterproof Boot</h3>
+                            <p>4 color</p>
+                            <div class="giasp">
+                            <span class="gia">$299</span>
+                            </div>
+                        </div>
+                        <div class="hang11 Timberland">
+                            <img src="../btl/boot5.png" alt="" class="boots big-image" id="bigImage5" data-default-src="../btl/boot5.png">
+                            <div class="spkhac">
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage5', '../btl/boot5-1.png')" onmouseout="resetImage('bigImage5', '../btl/boot5.png')"><img src="../btl/boot5-1.png" alt=""></a></div>
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage5', '../btl/boot5-2.png')" onmouseout="resetImage('bigImage5', '../btl/boot5.png')"><img src="../btl/boot5-2.png" alt=""></a></div>
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage5', '../btl/boot5-3.png')" onmouseout="resetImage('bigImage5', '../btl/boot5.png')"><img src="../btlboot5-3.png" alt=""></a></div>
+                            </div>
+                            <br>
+                            <h3>COMPOSITE TOE WATERPROOF WORK BOOT</h3>
+                            <p>2 color</p>
+                            <div class="giasp">
+                            <span class="gia">$399</span>
+                            </div>
+                        </div>
+                        <div class="hang11 Timberland">
+                            <img src="../btl/boot6.png" alt="" class="boots big-image" id="bigImage6" data-default-src="../btl/boot6.png">
+                            <div class="spkhac">
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage6', '../btl/boot6-1.png')" onmouseout="resetImage('bigImage6', '../btl/boot6.png')"><img src="../btl/boot6-1.png" alt=""></a></div>
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage6', '../btl/boot6-2.png')" onmouseout="resetImage('bigImage6', '../btl/boot6.png')"><img src="../btl/boot6-2.png" alt=""></a></div>
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage6', '../btl/boot6-3.png')" onmouseout="resetImage('bigImage6', '../btl/boot6.png')"><img src="../btl/boot6-3.png" alt=""></a></div>
+                            </div>
+                            <br>
+                            <h3>COMPOSITE WATERPROOF WORK BOOT</h3>
+                            <p>3 color</p>
+                            <div class="giasp">
+                            <span class="gia">$499</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hang11 Pedro">
+                            <img src="../btl/boot7.png" alt="" class="boots big-image" id="bigImage7" data-default-src="../btl/boot7.png">
+                            <div class="spkhac">
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage7', '../btl/boot7-1.png')" onmouseout="resetImage('bigImage7', '../btl/boot7.png')"><img src="../btl/boot7-1.png" alt=""></a></div>
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage7', '../btl/boot7-2.png')" onmouseout="resetImage('bigImage7', '../btl/boot7.png')"><img src="../btl/boot7-2.png" alt=""></a></div>
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage7', '../btl/boot7-3.png')" onmouseout="resetImage('bigImage7', '../btl/boot7.png')"><img src="../btl/boot7-3.png" alt=""></a></div>
+                            </div>
+                            <br>
+                            <h3>
+                                 HYBRIX LACE-UP BOOT </h3>
+                                <p>2 color</p>
+                            <div class="giasp">
+                            <span class="gia">$210</span>
+                            </div>
+                        </div>
+                        <div class="hang11 Pedro">
+                            <img src="../btl/boot8.png" alt="" class="boots big-image" id="bigImage8" data-default-src="../btl/boot8.png">
+                            <div class="spkhac">
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage8', '../btl/boot8-1.png')" onmouseout="resetImage('bigImage8', '../btl/boot8.png')"><img src="../btl/boot8-1.png" alt=""></a></div>
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage8', '../btl/boot8-2.png')" onmouseout="resetImage('bigImage8', '../btl/boot8.png')"><img src="../btl/boot8-2.png" alt=""></a></div>
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage8', '../btl/boot8-3.png')" onmouseout="resetImage('bigImage8', '../btl/boot8.png')"><img src="../btl/boot8-3.png" alt=""></a></div>
+                            </div>
+                            <br>
+                            <h3>
+                                Berlin Ankle Boots</h3>
+                                <p>3 color</p>
+                            <div class="giasp">
+                            <span class="gia">$199.99</span>
+                            </div>
+                        </div>
+                        <div class="hang11 Pedro">
+                            <img src="../btl/boot9.png" alt="" class="boots big-image" id="bigImage9" data-default-src="../btl/boot9.png">
+                            <div class="spkhac">
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage9', '../btl/boot9-1.png')" onmouseout="resetImage('bigImage9', '../btl/boot9.png')"><img src="../btl/boot9-1.png" alt=""></a></div>
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage9', '../btl/boot9-2.png')" onmouseout="resetImage('bigImage9', '../btl/boot9.png')"><img src="../btl/boot9-2.png" alt=""></a></div>
+                                <div class="sp"><a href="#" onmouseover="showImage('bigImage9', '../btl/boot9-3.png')" onmouseout="resetImage('bigImage9', '../btl/boot9.png')"><img src="../btl/boot9-3.png" alt=""></a></div>
+                            </div>
+                            <br>
+                            <h3>Leather Buckled Chelsea Boots </h3>
+                            <p>3 color</p>
+                            <div class="giasp">
+                            <span class="gia">$99.99</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="footer-section">
+                    <h3>Thông tin cửa hàng</h3>
+                    <p>Địa chỉ: Đại họ phenikaa</p>
+                    <p>Điện thoại: 0123 456 789</p>
+                    <p>Email: Giàynew@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Hỗ trợ khách hàng</h3>
+                    <ul>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Liên hệ hỗ trợ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kết nối với chúng tôi</h3>
+                    <ul class="social-links">
+                        <a href="#">Facebook :Lê Văn Quang</a>
+                        <br>
+                        <a href="#">Facebook :Nguyễn Hoàng Sơn</a>
+        
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cửa hàng của bạn. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="boots.js"></script>
+</body>
+</html>

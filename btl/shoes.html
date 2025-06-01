@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.box {
+    width: 100vw;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.tieude {
+    width: 100%;
+}
+.tieude1 {
+    padding-left: 50px;
+    background-color: rgba(128, 128, 128, 0.099);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo1 {
+    width: 3%;
+}
+.tieude1 > ul > li {
+    list-style: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid;
+}
+.tieude1 > ul {
+    display: flex;
+}
+.tieude1 > ul > li > a {
+    color: black;
+}
+.tieude1 > ul > li > a:hover {
+    color: rgba(0, 0, 0, 0.374);
+}
+.logo2 {
+    width: 50px;
+}
+.tieude2 {
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.tieudemid > ul {
+    display: flex;
+    list-style: none;
+}
+.tieudemid > ul > li > a > h3 {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: black;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.tieudemid > ul > li > a > h3:hover {
+    color: rgba(0, 0, 0, 0.374);
+    border-bottom: 3px solid black;
+}
+.tieuderight > form {
+    display: flex;
+    align-items: center;
+}
+.searchbox{
+ 
+    border-radius:30px ;
+    border: 1px solid black;
+    color: black;
+    
+}
+.searchbox > .search-input{
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 0;
+    color: black;
+}
+.searchbox > .search-btn{
+    background-color: black;
+    outline: none;
+    border: none;
+    color: gray;
+    padding: 15px 16px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.searchbox:hover > .search-input{
+    width: 100%;
+    color: black;
+    margin: 10px;
+
+}
+.searchbox:hover > .search-btn{
+    background-color: white;
+}
+.tieude-content {
+    margin-top: 50px;
+    width: 11%;
+    display: flex;
+}
+#button {
+    display: flex;
+    margin-left: 20px;
+}
+#button > .btn {
+    margin-left: 20px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+#button > .btn:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.tieude-content > a {
+    color: #000;
+}
+.tieude-content > a > h1:hover {
+    color: rgba(0, 0, 0, 0.377);
+    border-bottom: 3px solid black;
+}
+.menu {
+    width: 100%;
+}
+.sanpham {
+    width: 100%;
+}
+.hang1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+}
+.hang11 {
+    width: 30%;
+    margin: 20px;
+    height: 30%;
+    position: relative;
+    text-align: center;
+    display: none;
+}
+.dropdown-content {
+    width: 100%;
+    display: flex;
+    display: none;
+    z-index: 1;
+
+}
+.color{
+    width: 30%;
+    padding-left: 20px;
+}
+.hang11:hover .dropdown-content {
+    display: flex;
+}
+.shoes {
+    width: 100%;
+    height: 100%;
+    
+
+}
+.shoes:hover
+{
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+}
+.show {
+    display: block;
+}
+
+.hang11 > ul > li > a >img{
+    width: 40%;
+    border: 1px solid;
+
+}
+
+ul > li
+{
+    transition: transform 0.3s ease ;
+    transform: scale(1.05);
+} 
+.footer {
+    background-color: rgb(24, 22, 22);
+    color: rgb(175, 168, 168);
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 50px;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul {
+    padding-top: 5px;
+}
+
+.footer-section a {
+    color: rgb(175, 168, 168);
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    gap: 10px;
+}
+
+.social-links li {
+    display: inline-block;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #998c8c;
+    padding-top: 10px;
+}
+</style>
+</head>
+<body>
+    <div class="box">
+        <div class="tieude">
+            <div class="tieude1">
+                <a href="homepage.html"><img src="../btl/logo1.png" alt="" class="logo1"></a>
+                <ul>
+                    <li><a href="findastore.html">Find a store</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="Joinus.html">Join us</a></li>
+                    <li><a href="login.html">Sign in</a></li>
+                </ul>
+            </div>
+            <div class="tieude2">
+                <a href="homepage.html"><img src="../btl/logo2.png" alt="" class="logo2"></a>
+                <div class="tieudemid">
+                    <ul>
+                        <li><a href="homepage.html"><h3>New and Featured</h3></a></li>
+                        <li><a href="shoes.html"><h3>Shoes</h3></a></li>
+                        <li><a href="Boots.html"><h3>Boots</h3></a></li>
+                        <li><a href="Sandals.html"><h3>Sandals</h3></a></li>
+                    </ul>
+                </div>
+                <div class="tieuderight">
+                    <form class="searchbox">
+                        <input type="text" placeholder="Search" class="search-input" id="search-input" onkeyup="search()" >
+                        <button type="submit" class="search-btn" id="search-btn"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="tieude-content">
+                <a href="shoes.html"><h1 style="font-family: Arial, Helvetica, sans-serif;">SHOES</h1></a>
+                <div id="button">
+                    <button class="btn" onclick="filter('all')">Show All</button>
+                    <button class="btn" onclick="filter('Nike')">Nike</button>
+                    <button class="btn" onclick="filter('Adidas')">Adidas</button>
+                    <button class="btn" onclick="filter('Low')">Low</button>
+                    <button class="btn" onclick="filter('Mid')">Mid</button>
+                    <button class="btn" onclick="filter('High')">High</button>
+                    <button class="btn" onclick="filter('Sale')">Sale</button>
+
+                </div>
+            </div>
+            <div class="menu">
+                <div class="sanpham">
+                    <div class="hang1" id="productlist">
+                        <div class="hang11 Nike Low Sale">
+                            <a href="#"><img src="../btl/air-force-1-07-shoes-WrLlWX.png" alt="" class="shoes" id="af1low1"></a>
+
+                            <div class="dropdown-content">
+                                <div class="color">
+                                    <a href=""><img src="../btl/af1-(2).png" alt=""class="shoes"  id="af1low2"></a>                                        
+                                </div>
+                                <div class="color">
+                                    <a href=""><img src="../btl/af1-(5).png" alt=""class="shoes"  id="af1low3"></a>                                        
+                                </div>
+                                <div class="color">
+                                    <a href=""><img src="../btl/af1-(3).png" alt=""class="shoes" id="af1low4"></a>
+                                </div>                                   
+                                <div class="color">
+                                    <a href=""><img src="../btl/af1-(4).png" alt=""class="shoes" id="af1low5"></a>
+                                </div>
+                            </div>
+                            <br> <br>
+                            <h3 style="display: none;">nike sale low af1</h3>
+                            <a href=""><a><h3> Air Force 1 Low</h3></a>
+                            <p>5 colors</p>
+                            <p style="font-size: 15px;"><del>3.400.000đ</del></p>
+                            <p>3.000.000đ</p>
+                        </div>
+                        <div class="hang11 Nike Mid">
+                            <a href="#"><img src="../btl/af1mid.png" alt="" class="shoes" id="af1mid1"></a>
+                            <div class="dropdown-content">
+                                <div class="color">
+                                    <a href=""><img src="../btl/air-force-1-mid-07-shoe-9S2mB4.png" alt=""class="shoes" id="af1mid2"></a>                                        
+                                </div>
+                                <div class="color">
+                                    <a href=""><img src="../btl/custom-nike-air-force-1-mid-by-you-shoes.png" alt=""class="shoes" id="af1mid3"></a>                                        
+                                </div>
+                            </div>
+                            <h3 style="display: none;">nike mid af1</h3>
+                            <br> <br>
+                            <a href=""><a><h3>Air Force 1 Mid</h3></a>
+                            <p>3 colors</p>
+                            <p>3.450.000đ</p>
+                        </div>
+                        <div class="hang11 Adidas Low ">
+                            <a href="#"><img src="../btl/adiform (1).png" alt="" class="shoes" id="adiform1"></a>
+                            <div class="dropdown-content">
+                                <div class="color">
+                                    <a href=""><img src="../btl/adiform (2).png" alt=""class="shoes" id="adiform2"></a>                                        
+                                </div>
+                            </div>
+                            <h3 style="display: none;">adidas low  Super Star Adiform</h3>
+                            <a href=""><a><h3>Adidas Super Star Adiform</h3></a>
+                            <p>2 colors</p>
+                            <p>2.900.000đ</p>
+                        </div>
+                        <div class="hang11 Nike High">
+                            <a href="#"><img src="../btl/af1high2.png" alt="" class="shoes" id="af1high1"></a>
+                            <div class="dropdown-content">
+                                <div class="color">
+                                    <a href=""><img src="../btl/af1high.png" alt=""class="shoes" id="af1high2"></a>                                        
+                                </div>
+                                <div class="color">
+                                    <a href=""><img src="../btl/af1high3.png" alt=""class="shoes" id="af1high3"></a>
+                                </div>                                   
+
+                            </div>
+                            <h3 style="display: none;">nike high Air Force 1 high</h3>
+                            <br> <br>
+                            <a href=""><a><h3>Air Force 1 high</h3></a>
+                            <p>3 colors</p>
+                            <p>4.259.000đ</p>
+                        </div>
+                        <div class="hang11 Nike Low">
+                            <a href="#"><img src="../btl/j1-1.png" alt="" class="shoes" id="j1low1"></a>
+                            <div class="dropdown-content">
+                                <div class="color">
+                                    <a href=""><img src="../btl/j1-5.png" alt=""class="shoes" id="j1low2"></a>                                        
+                                </div>
+                                <div class="color">
+                                    <a href=""><img src="../btl/j1low (2).png" alt=""class="shoes" id="j1low3"></a>
+                                </div>                                   
+                                <div class="color">
+                                    <a href=""><img src="../btl/j1low (3).png" alt=""class="shoes" id="j1low4"></a>
+                                </div>  
+                            </div>
+                            <br> <br>
+                            <h3 style="display: none;">nike low Jordan 1 Low</h3>
+                            <a href=""><a><h3>Jordan 1 Low</h3></a>
+                            <p>4 colors</p>
+                            <p>3.500.000đ</p>
+                        </div>
+                        <div class="hang11 Nike Mid">
+                            <a href="#"><img src="../btl/j1mid (2).png" alt="" class="shoes" id="j1mid1"></a>
+                            <div class="dropdown-content">
+                                <div class="color">
+                                    <a href=""><img src="../btl/j1mid.png" alt=""class="shoes" id="j1mid2"></a>                                        
+                                </div>
+                                <div class="color">
+                                    <a href=""><img src="../btl/j1mid (3).png" alt=""class="shoes" id="j1mid3"></a>
+                                </div>                                   
+                                <div class="color">
+                                    <a href=""><img src="../btl/j1mid (4).png" alt=""class="shoes" id="j1mid4"></a>
+                                </div> 
+                                <div class="color">
+                                    <a href=""><img src="../btl/j1mid (5).png" alt=""class="shoes" id="j1mid5"></a>
+                                </div> 
+                            </div>
+                            <h3 style="display: none;">nike mid Jordan 1</h3>
+                            <br> <br>
+                            <a href=""><a><h3>Jordan 1 mid</h3></a>
+                            <p>5 colors</p>
+                            <p>4.500.000đ</p>
+                        </div>
+                        <div class="hang11 High Nike">
+                            <a href="#"><img src="../btl/j1high.png" alt="" class="shoes" id="j1high1"></a>
+                            <div class="dropdown-content">
+                                <div class="color">
+                                    <a href=""><img src="../btl/j1high (2).png" alt=""class="shoes" id="j1high2"></a>                                        
+                                </div>
+                                <div class="color">
+                                    <a href=""><img src="../btl/j1mid (3).png" alt=""class="shoes" id="j1high3"></a>
+                                </div>                                   
+                            </div>
+                            <h3 style="display: none;">nike high Jordan 1</h3>
+                            <br> <br>
+                            <a href=""><a><h3>Jordan 1 high</h3></a>
+                            <p>3 colors</p>
+                            <p>4.500.000đ</p>
+                        </div>
+                        <div class="hang11 Nike Low">
+                            <a href="#"><img src="../btl/j6.png" alt="" class="shoes"></a>
+                            <!-- <div class="dropdown-content">
+                                <div class="color">
+                                    <a href=""><img src="../btl/af1-(2).png" alt=""class="shoes"></a>                                        
+                                </div>
+                                <div class="color">
+                                    <a href=""><img src="../btl/af1-(2).png" alt=""class="shoes"></a>
+                                </div>                                   
+                            </div> -->
+                            
+                            <br> <br>
+                            <h3 style="display: none;">nike low Jordan Legacy 312</h3>
+                            <a href=""><a><h3>Jordan Legacy 312 Low</h3></a>
+                            <p>1 colors</p>
+                            <p>4.500.000đ</p>
+                        </div>
+                        <div class="hang11 Nike Low Sale">
+                            <a href="#"><img src="../btl/j7.png" alt="" class="shoes" id="spi1"></a>
+                            <div class="dropdown-content">
+                                <div class="color">
+                                    <a href=""><img src="../btl/j8.png" alt=""class="shoes" id="spi2"></a>                                        
+                                </div>
+                            </div> 
+                            <br> <br>
+                            <h3 style="display: none;">nike low sale Jordan Spizike</h3>
+                            <a href=""><a><h3>Jordan Spizike Low</h3></a>
+                            <p>2 colors</p>
+                            <p><del>4.500.000đ</del></p>
+                            <p>3.600.000</p>
+                        </div>
+                        <div class="hang11 Adidas Low Sale">
+                            <a href="#"><img src="../btl/forum (1).png" alt="" class="shoes" id="forumlow1"></a>
+                            <div class="dropdown-content">
+                                <div class="color">
+                                    <a href=""><img src="../btl/forum (2).png" alt=""class="shoes" id="forumlow2"></a>                                        
+                                </div>
+                                <div class="color">
+                                    <a href=""><img src="../btl/forum (3).png" alt=""class="shoes"id="forumlow3"></a>
+                                </div>                                   
+                                <div class="color">
+                                    <a href=""><img src="../btl/forum (4).png" alt=""class="shoes" id="forumlow4"></a>
+                                </div>                                   
+
+                            </div>
+                            <h3 style="display: none;">adidas low sale Adidas Forum</h3>
+                            <a href=""><a><h3>Adidas Forum Low</h3></a>
+                            <p>4 colors</p>
+                            <p><del>3.000.000</del></p>
+                            <p>2.500.000đ</p>
+                        </div>
+                        <div class="hang11 Adidas Low Sale">
+                            <a href="#"><img src="../btl/stansmith (1).png" alt="" class="shoes" id="stansmith1"></a>
+                            <div class="dropdown-content">
+                                <div class="color">
+                                    <a href=""><img src="../btl/stansmith (2).png" alt=""class="shoes" id="stansmith2"></a>                                        
+                                </div>
+                            </div>
+                            <h3 style="display: none;">adidas low sale Stansmith</h3>
+
+                            <a href=""><a><h3>Adidas Stansmith</h3></a>
+                            <p>2 colors</p>
+                            <p><del>3.000.000</del></p>
+                            <p>2.500.000đ</p>
+                        </div>
+                        <div class="hang11 Adidas Low Sale">
+                            <a href="#"><img src="../btl/superstar (5).png" alt="" class="shoes" id="superstar1"></a>
+                            <div class="dropdown-content">
+                                <div class="color">
+                                    <a href=""><img src="../btl/superstar (1).png" alt=""class="shoes" id="superstar2"></a>                                        
+                                </div>
+                                <div class="color">
+                                    <a href=""><img src="../btl/superstar (2).png" alt=""class="shoes"id="superstar3"></a>
+                                </div>                                   
+                            </div>
+                            <h3 style="display: none;">adidas low sale Super Star</h3>
+                            <a href=""><a><h3>Adidas Super Star</h3></a>
+                            <p>3 colors</p>
+                            <p><del>3.500.000</del></p>
+                            <p>2.900.000đ</p>
+                        </div>
+
+                        <div class="hang11 Adidas Mid">
+                            <a href="#"><img src="../btl/forummid (1).png" alt="" class="shoes" id="forummid1"></a>
+                            <div class="dropdown-content">
+                                <div class="color">
+                                    <a href=""><img src="../btl/forummid (2).png" alt=""class="shoes" id="forummid2"></a>                                        
+                                </div>
+                            </div>
+                            <h3 style="display: none;">adidas Forum Mid</h3>
+                            <a href=""><a><h3>Adidas Forum Mid</h3></a>
+                            <p>2 colors</p>
+                            <p>2.900.000đ</p>
+                        </div>
+                        <div class="hang11  Nike Mid">
+                            <a href="#"><img src="../btl/tantum2.png" alt="" class="shoes" id="forummid1"></a>
+                            <div class="dropdown-content">
+                            </div>
+                            <h3 style="display: none;">nike tantum 2 mid</h3>
+                            <a href=""><a><h3>Tantum 2</h3></a>
+                            <p>1 colors</p>
+                            <p>3.900.000đ</p>
+                        </div>
+                        <!-- <div class="hang11 Nike">
+                            <a href="#"><img src="../btl/af1-(2).png" alt="" class="shoes"></a>
+                            <div class="dropdown-content">
+                                <div class="color">
+                                    <a href=""><img src="../btl/af1-(2).png" alt=""class="shoes"></a>                                        
+                                </div>
+                                <div class="color">
+                                    <a href=""><img src="../btl/af1-(2).png" alt=""class="shoes"></a>
+                                </div>                                   
+
+                            </div>
+                        </div>
+                        <div class="hang11 Nike">
+                            <a href="#"><img src="../btl/af1-(2).png" alt="" class="shoes" id="shoes"></a>
+                            <div class="dropdown-content">
+                                <div class="color">
+                                    <a href=""><img src="../btl/af1-(2).png" alt=""class="shoes"></a>                                        
+                                </div>
+                                <div class="color">
+                                    <a href=""><img src="../btl/af1-(2).png" alt=""class="shoes"></a>
+                                </div>                                   
+
+                            </div>
+                        </div>
+                        <div class="hang11 Nike">
+                            <a href="#"><img src="../btl/af1-(2).png" alt="" class="shoes"></a>
+                            <div class="dropdown-content">
+                                <div class="color">
+                                    <a href=""><img src="../btl/af1-(2).png" alt=""class="shoes"></a>                                        
+                                </div>
+                                <div class="color">
+                                    <a href=""><img src="../btl/af1-(2).png" alt=""class="shoes"></a>
+                                </div>                                   
+
+                            </div>
+                        </div>
+                        <div class="hang11 Nike ">
+                            <a href="#"><img src="../btl/af1-(2).png" alt="" class="shoes"></a>
+                            <div class="dropdown-content">
+                                <div class="color">
+                                    <a href=""><img src="../btl/af1-(2).png" alt=""class="shoes"></a>                                        
+                                </div>
+                                <div class="color">
+                                    <a href=""><img src="../btl/af1-(2).png" alt=""class="shoes"></a>
+                                </div>                                   
+
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="footer-section">
+                    <h3>Thông tin cửa hàng</h3>
+                    <p>Địa chỉ: Đại họ phenikaa</p>
+                    <p>Điện thoại: 0123 456 789</p>
+                    <p>Email: Giàynew@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Hỗ trợ khách hàng</h3>
+                    <ul>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Liên hệ hỗ trợ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kết nối với chúng tôi</h3>
+                    <ul class="social-links">
+                        <a href="#">Facebook :Lê Văn Quang</a>
+                        <br>
+                        <a href="#">Facebook :Nguyễn Hoàng Sơn</a>
+        
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cửa hàng của bạn. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        filter('all');
+
+        function filter(c) {
+            var x, i;
+            x = document.getElementsByClassName("hang11");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                removeClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+            }
+        }
+
+        function addClass(element, name) {
+            var arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (var i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function removeClass(element, name) {
+            var arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (var i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        
+        }
+    </script>
+    <script>
+        af1low2.onmouseover = () => af1low1.src = "../btl/af1-(2).png";
+        af1low2.onmouseout = function(){
+            af1low1.src = "../btl/air-force-1-07-shoes-WrLlWX.png";
+        }
+        af1low3.onmouseover = () => af1low1.src = "../btl/af1-(5).png";
+        af1low3.onmouseout = function(){
+            af1low1.src = "../btl/air-force-1-07-shoes-WrLlWX.png";
+        }
+        af1low4.onmouseover = () => af1low1.src = "../btl/af1-(3).png";
+        af1low4.onmouseout = function(){
+            af1low1.src = "../btl/air-force-1-07-shoes-WrLlWX.png";
+        }
+        af1low5.onmouseover = () => af1low1.src = "../btl/af1-(4).png";
+        af1low5.onmouseout = function(){
+            af1low1.src = "../btl/air-force-1-07-shoes-WrLlWX.png";
+        }
+        af1mid2.onmouseover = () => af1mid1.src = "../btl/air-force-1-mid-07-shoe-9S2mB4.png";
+        af1mid2.onmouseout = function(){
+            af1mid1.src = "../btl/af1mid.png";
+        }
+        af1mid3.onmouseover = () => af1mid1.src = "../btl/custom-nike-air-force-1-mid-by-you-shoes.png";
+        af1mid3.onmouseout = function(){
+            af1mid1.src = "../btl/af1mid.png";
+        }
+        adiform2.onmouseover = () => adiform1.src = "../btl/adiform (2).png";
+        adiform2.onmouseout = function(){
+            adiform1.src = "../btl/adiform (1).png";
+        }
+        af1high2.onmouseover = () => af1high1.src = "../btl/af1high.png";
+        af1high2.onmouseout = function(){
+            af1high1.src = "../btl/af1high2.jpg";
+        }
+        af1high3.onmouseover = () => af1high1.src = "../btl/af1high3.ppng";
+        af1high3.onmouseout = function(){
+            af1high1.src = "../btl/af1high.jpg";
+        }
+        j1low2.onmouseover = () => j1low1.src = "../btl/../btl/j1-5.png";
+        j1low2.onmouseout = function(){
+            j1low1.src = "../btl/j1-1.png";
+        }
+        j1low3.onmouseover = () => j1low1.src = "../btl/j1low (2).png";
+        j1low3.onmouseout = function(){
+            j1low1.src = "../btl/j1-1.png";
+        }
+        j1low4.onmouseover = () => j1low1.src = "../btl/j1low (3).png";
+        j1low4.onmouseout = function(){
+            j1low1.src = "../btl/j1-1.png";
+        }
+        j1mid2.onmouseover = () => j1mid1.src = "../btl/j1mid.png";
+        j1mid2.onmouseout = function(){
+            j1mid1.src = "../btl/j1mid (2).png";
+        }
+        j1mid3.onmouseover = () => j1mid1.src = "../btl/j1mid (3).png";
+        j1mid3.onmouseout = function(){
+            j1mid1.src = "../btl/j1mid (2).png";
+
+        }
+        j1mid4.onmouseover = () => j1mid1.src = "../btl/j1mid (4).png";
+        j1mid4.onmouseout = function(){
+            j1mid1.src = "../btl/j1mid (2).png";
+
+        }
+        j1mid5.onmouseover = () => j1mid1.src = "../btl/j1mid (5).png";
+        j1mid5.onmouseout = function(){
+            j1mid1.src = "../btl/j1mid (2).png";
+
+        }
+        j1high2.onmouseover = () => j1high1.src = "../btl/j1high (2).png";
+        j1high2.onmouseout = function(){
+            j1high1.src = "../btl/j1high.png";
+
+        }
+        j1high3.onmouseover = () => j1high1.src = "../btl/j1mid (3).png";
+        j1high3.onmouseout = function(){
+            j1high1.src = "../btl/j1high.png";
+
+        }
+        spi2.onmouseover = () => spi1.src = "../btl/j8.png";
+        spi2.onmouseout = function(){
+            spi1.src = "../btl/j7.png";
+
+        }
+        forumlow2.onmouseover = () => forumlow1.src = "../btl/forum (2).png";
+        forumlow2.onmouseout = function(){
+            forumlow1.src = "../btl/forum (1).png";
+
+        }
+        forumlow3.onmouseover = () => forumlow1.src = "../btl/forum (3).png";
+        forumlow3.onmouseout = function(){
+            forumlow1.src = "../btl/forum (1).png";
+
+        }
+        forumlow4.onmouseover = () => forumlow1.src = "../btl/forum (4).png";
+        forumlow4.onmouseout = function(){
+            forumlow1.src = "../btl/forum (1).png";
+
+        }
+        stansmith2.onmouseover = () => stansmith1.src = "../btl/stansmith (2).png";
+        stansmith2.onmouseout = function(){
+            stansmith1.src = "../btl/stansmith (1).png";
+
+        }
+        superstar2.onmouseover = () => superstar1.src = "../btl/superstar (1).png";
+        superstar2.onmouseout = function(){
+            superstar1.src = "../btl/superstar (5).png";
+
+        }
+        superstar3.onmouseover = () => superstar1.src = "../btl/superstar (2).png";
+        superstar3.onmouseout = function(){
+            superstar1.src = "../btl/superstar (5).png";
+
+        }
+        forummid2.onmouseover = () => forummid1.src = "../btl/forummid (2).png";
+        forummid2.onmouseout = function(){
+            forummid1.src = "../btl/forummid (1).png";
+
+        }
+        
+       
+    </script>
+    <script>
+         const search = () => {
+            const searchbox = document.getElementById("search-input").value.toUpperCase();
+            const storeitems = document.getElementById("productlist");
+            const product = document.querySelectorAll(".hang11");
+            const pname = document.getElementsByTagName("h3")
+            for(var i = 0; i < pname.length; i++){
+                let match = product[i].getElementsByTagName('h3')[0];
+                if(match){
+                    let textvalue = match.textContent || match.innerHTML
+                    if(textvalue.toUpperCase().indexOf(searchbox) > -1){
+                        product[i].style.display = "";
+                    }else{
+                        product[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+    async function fetchShoes() {
+    try {
+        const response = await fetch('http://localhost:8000/shoes');
+        if (!response.ok) throw new Error('Network response was not ok');
+        const data = await response.json();
+
+        const container = document.getElementById('shoesList');
+        container.innerHTML = '';
+
+        data.forEach(item => {
+            const divMain = document.createElement('div');
+            divMain.className = `hang11 ${item.brand} ${item.model}`;
+
+            const mainLink = document.createElement('a');
+            mainLink.href = item.detail_url || '#';
+
+            const mainImg = document.createElement('img');
+            mainImg.src = item.images[0];
+            mainImg.alt = item.name;
+            mainImg.className = 'shoes';
+            mainImg.id = item.id + '-main';
+
+            mainLink.appendChild(mainImg);
+            divMain.appendChild(mainLink);
+
+            const dropdownContent = document.createElement('div');
+            dropdownContent.className = 'dropdown-content';
+
+            item.images.forEach((imgUrl, index) => {
+                const colorDiv = document.createElement('div');
+                colorDiv.className = 'color';
+
+                const colorLink = document.createElement('a');
+                colorLink.href = item.detail_url || '#';
+
+                const colorImg = document.createElement('img');
+                colorImg.src = imgUrl;
+                colorImg.alt = `${item.name} color ${index + 1}`;
+                colorImg.className = 'shoes';
+                colorImg.id = item.id + '-color' + (index + 1);
+
+                colorLink.appendChild(colorImg);
+                colorDiv.appendChild(colorLink);
+                dropdownContent.appendChild(colorDiv);
+            });
+
+            divMain.appendChild(dropdownContent);
+            container.appendChild(divMain);
+        });
+    } catch (error) {
+        console.error('Fetch error:', error);
+    }
+}
+
+fetchShoes();
+
+</script>
+
+</body>
+</html>

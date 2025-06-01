@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+.box {
+    width: 100vw;
+    justify-content: space-between;
+
+}
+.tieude {
+    width: 100%;
+}
+.tieude1 {
+    padding-left: 50px;
+    background-color: rgba(128, 128, 128, 0.099);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+.logo1 {
+    width: 3%;
+}
+.searchbox{
+    color: white;
+    border-radius:30px ;
+    
+}
+.searchbox > .search-input{
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 0;
+}
+.searchbox > .search-btn{
+    background-color: black;
+    outline: none;
+    border: none;
+    color: gray;
+    padding: 15px 16px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.searchbox:hover{
+    border: 1px solid black;
+}
+.searchbox:hover > .search-input{
+    width: 100%;
+    color: black;
+    margin: 10px;
+    height: 100%;
+}
+.searchbox:hover > .search-btn{
+    background-color: white;
+}
+.tieude1 > ul > li {
+    list-style: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid;
+}
+.tieude1 > ul {
+    display: flex;
+}
+.tieude1 > ul > li > a {
+    color: black;
+}
+.tieude1 > ul > li > a:hover {
+    color: rgba(0, 0, 0, 0.374);
+}
+.logo2 {
+    width: 50px;
+}
+.tieude2 {
+
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.tieudemid > ul {
+    display: flex;
+    list-style: none;
+}
+.tieudemid > ul > li > a > h3 {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: black;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.tieudemid > ul > li > a > h3:hover {
+    color: rgba(0, 0, 0, 0.374);
+    border-bottom: 3px solid black;
+}
+.tieuderight > form {
+    display: flex;
+    align-items: center;
+}
+.search-input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+.search-btn {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #000;
+    color: white
+}
+.search-btn:hover {
+    background-color:rgba(0, 0, 0, 0.537);
+}
+.tieude3{
+    padding-top: 20px;
+    background-color: rgba(128, 128, 128, 0.099);
+    text-align: center;
+    justify-content: center;
+}
+.tieude3 > a{
+    padding: 10px;
+    color: black;
+}
+.tieude3 > a:hover{
+    color: rgba(0, 0, 0, 0.374);
+}
+.content{
+    width: 100%;
+    margin-top: 50px;
+}
+.search{
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+.gethelp{
+    width: 25%;
+    height: 50px;
+    margin: 30px auto;
+    position: relative;
+}
+.gethelp > span{
+    position: absolute;
+    top:15px;
+    left: 90%;
+    color: rgba(128, 128, 128, 0.66);
+}
+.gethelp > p{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    color: rgba(128, 128, 128, 0.91);
+}
+.gethelp > .search-input{
+    width: 100%;
+    border-radius: 10px ;
+    height: 100%;
+}
+
+.gethelp:hover > .holder{
+    top:-15px;
+    background-color: white;
+    color: black;
+    transition:0.3s ;
+}
+.gethelp:hover > .answer1{
+    display: block;
+}
+
+.answer1{
+    display: none;
+}

@@ -1,0 +1,124 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('../btl/nen.png') no-repeat center center fixed;
+    background-size: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: white; 
+    backdrop-filter: blur(30px); 
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #5a76f1;
+}
+
+button:active {
+    background-color: #4a63d3;
+}
+
+.social-login {
+    margin-top: 20px;
+}
+
+.social-login p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.social-button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.facebook-login {
+    background-color: #3b5998;
+}
+
+.facebook-login:hover {
+    background-color: #334d84;
+}
+
+.google-login {
+    background-color: #db4437;
+}
+
+.google-login:hover {
+    background-color: #c2362c;
+}
+
+.discord-login {
+    background-color: #7289da;
+}
+
+.discord-login:hover {
+    background-color: #5a6ea6;
+}
+
+.apple-login {
+    background-color: #000000;
+}
+
+.apple-login:hover {
+    background-color: #333333;
+}

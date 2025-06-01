@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: lightblue;
+}
+
+.sky {
+    width: 100%;
+    height: 240px;
+    background: linear-gradient(to bottom, #87ceeb, #f0f8ff);
+    position: relative;
+    overflow: hidden;
+}
+
+.sun {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    box-shadow: 0 0 30px 10px yellow;
+}
+
+.cloud {
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: -200px;
+    animation: moveClouds 20s linear infinite;
+}
+
+
+
+@keyframes moveClouds {
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.co {
+    width: 100%;
+    height: 120px;
+    background-color: green;
+
+    position: relative;
+}
+
+.grass {
+    width: 20px;
+    height: 60px;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+}
+
+
+.duong {
+    background-color: rgba(128, 128, 128, 0.937);
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+.keduong {
+    width: 100%;
+    padding-top: 150px;
+    border-bottom: 6px dashed white;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px dashed black;
+    position: absolute;
+    top: -80px;
+    left: 0px;
+    animation: roll 5s 1, run 5s ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes run {
+    0% {
+        left: -300px;
+    }
+    99%{
+        left: 89.01%;
+    }
+    100%{
+        left: 88%;
+    }
+}
+
+.car {
+    width: 50px;
+    height: 25px;
+    background-color: red;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    border-radius: 5px;
+    animation: drive 5s linear infinite;
+}
+
+@keyframes drive {
+    0% {
+        left: -60px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+</style>
+</head>
+<body>
+    <div class="sky">
+        <div class="sun"></div>
+        <div class="cloud"></div> 
+    </div>
+    <div class="co">
+        <div class="grass"></div>
+    </div>
+    <div class="leduong"></div>
+    <div class="duong">
+        <div class="keduong"></div>
+        <div class="logo">
+            <a href="homepage.html"><img src="../btl/logo3.png" alt="" class="logo"></a>
+        </div>
+        <div class="car"></div>
+    </div>
+</body>
+</html>

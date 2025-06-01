@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <a href="homepage.html" target="_blank"><button type="button">login</button></a>
+        </form>
+        <div class="social-login">
+            <p>Or login with</p>
+            <button class="social-button facebook-login">
+                <i class="fab fa-facebook-f"></i>
+            </button>
+            <button class="social-button google-login">
+                <i class="fab fa-google"></i>
+            </button>
+            <button class="social-button discord-login">
+                <i class="fab fa-discord"></i>
+            </button>
+            <button class="social-button apple-login">
+                <i class="fab fa-apple"></i>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
